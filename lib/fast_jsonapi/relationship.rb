@@ -88,9 +88,9 @@ module FastJsonapi
 
     def id_hash(id, record_type, default_return=false)
       if id.present?
-        { id: id.to_s, type: record_type }
+        { id: id.to_s }
       else
-        default_return ? { id: nil, type: record_type } : nil
+        default_return ? { id: nil } : nil
       end
     end
 
